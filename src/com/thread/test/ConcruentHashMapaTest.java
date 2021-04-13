@@ -6,16 +6,16 @@ public class ConcruentHashMapaTest {
 
     public  static ConcurrentHashMap<String, Integer> hashMap = new ConcurrentHashMap<>();
 
-    public static void main(String[] args) throws InterruptedException {
-        hashMap.put("value",0);
-        Thread thread1 = new Thread(new CalRunnable());
-        Thread thread2 = new Thread(new CalRunnable());
-        thread1.start();
-        thread2.start();
-        thread1.join();
-        thread2.join();
-        System.out.println("hashMap:" + hashMap.get("value"));
-    }
+//    public static void main(String[] args) throws InterruptedException {
+//        hashMap.put("value",0);
+//        Thread thread1 = new Thread(new CalRunnable());
+//        Thread thread2 = new Thread(new CalRunnable());
+//        thread1.start();
+//        thread2.start();
+//        thread1.join();
+//        thread2.join();
+//        System.out.println("hashMap:" + hashMap.get("value"));
+//    }
 
 
     static class CalRunnable implements Runnable {
