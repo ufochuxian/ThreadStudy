@@ -9,18 +9,18 @@ import java.util.concurrent.Executors;
 public class CountdownLatchTest implements Runnable {
     private static final CountDownLatch countDownLatch = new CountDownLatch(5);
 
-    public static void main(String[] args) {
-
-        ExecutorService executorService = Executors.newFixedThreadPool(5);
-
-        for (int i = 0; i < 5; i++) {
-            executorService.submit(new CountdownLatchTest());
-        }
-
-        if (countDownLatch.getCount() == 0) {
-            System.out.println("所有人吃完饭啦");
-        }
-    }
+//    public static void main(String[] args) {
+//
+//        ExecutorService executorService = Executors.newFixedThreadPool(5);
+//
+//        for (int i = 0; i < 5; i++) {
+//            executorService.submit(new CountdownLatchTest());
+//        }
+//
+//        if (countDownLatch.getCount() == 0) {
+//            System.out.println("所有人吃完饭啦");
+//        }
+//    }
 
 
     @Override
