@@ -4,6 +4,8 @@ import java.util.concurrent.CyclicBarrier;
 
 public class CyclicBarrierTest {
 
+    //cyclicBarrier和CountDownLatch的区别是，cyclicBarrier在执行后，可以去继续进行执行
+
     private static CyclicBarrier cyclicBarrier;
 
     public static void main(String[] args) {
